@@ -8,7 +8,7 @@ class App extends Component {
   render(props) {
     return (
       <ScrollView>  
-      <View><Text>chirag</Text></View>
+      <View><Text>chirag kapadiya</Text></View>
       </ScrollView>
     );
   }
