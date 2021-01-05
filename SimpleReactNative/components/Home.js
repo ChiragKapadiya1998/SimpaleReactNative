@@ -1,68 +1,15 @@
 import React from 'react';
 import { SafeAreaView, View,Image, FlatList, StyleSheet,Button, Text, StatusBar, } from 'react-native';
 
-const DATA = [
-  {
-    id: 1,
-    title: 'First name',
-    name:'chirag',
-  },
-  {
-    id: 2,
-    title: 'Second name',
-    name:'ravi'
-  },
-  {
-    id: 3,
-    title: 'Third name',
-    name:'ravi'
-  },
-  {
-    id: 4,
-    title: 'forth name',
-    name:'ravi'
-  },
-  {
-    id: 5,
-    title: 'five name',
-    name:'ravi'
-  },
-  {
-    id: 6,
-    title: 'six name',
-    name:'ravi'
-  },
-  {
-    id: 7,
-    title: 'seven name',
-    name:'ravi'
-  },
-  
-];
 
-const Item = ({ title ,name}) => (
-  <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
-    <Text>{name}</Text>
-  </View>
-);
+
 
 const Home = ({navigation}) => {
-    const renderItem = ({ item }) => (
-      <Item title={item.title} />,
-      <Item name={item.name}/>
-    );
-
-  return (
+     return (
     <SafeAreaView style={styles.container}>
-      <FlatList
-        data={DATA}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-        />
         <Button
-        title="Count"
-        onPress={() => navigation.navigate('Count')}
+        title="Login"
+        onPress={() => navigation.navigate('Login')}
       />
     </SafeAreaView>
   );
